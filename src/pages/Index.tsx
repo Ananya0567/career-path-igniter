@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import CareerPaths from "@/components/CareerPaths";
+import RoadmapBuilder from "@/components/RoadmapBuilder";
+import Features from "@/components/Features";
+import CTA from "@/components/CTA";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Navigation />
+      <main>
+        <HeroSection />
+        <div id="careers">
+          <CareerPaths />
+        </div>
+        <div id="roadmaps">
+          <RoadmapBuilder />
+        </div>
+        <div id="features">
+          <Features />
+        </div>
+        <CTA />
+      </main>
     </div>
   );
 };
